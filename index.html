@@ -1,139 +1,69 @@
-html
-Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuro-Health Africa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        main {
-            padding: 2rem;
-        }
-        section {
-            margin-bottom: 2rem;
-            background-color: #fff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #28a745;
-            color: #fff;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #218838;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-            p {
-                font-size: 1rem;
-            }
-            .cta-button {
-                padding: 0.6rem 1.2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to Neuro-Health Africa</h1>
-        <p>Empowering Minds, Transforming Lives</p>
+        <div class="container">
+            <h1>Welcome to Neuro-Health Africa</h1>
+            <p>Empowering Minds, Transforming Lives</p>
+        </div>
     </header>
+
     <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Neuro-Health Africa is dedicated to empowering individuals with neurological disorders by providing accessible diagnostic tools, therapy resources, and support services across Africa.</p>
-            <a href="#services" class="cta-button">Explore Our Services</a>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <div style="display: flex; flex-wrap: wrap;">
-                <div style="flex: 1; padding-right: 1rem;">
-                    <h3>Diagnostic Tools</h3>
-                    <p>State-of-the-art diagnostic tools for accurate assessment and early detection of neurological disorders.</p>
-                </div>
-                <div style="flex: 1; padding-right: 1rem;">
-                    <h3>Therapy Resources</h3>
-                    <p>Comprehensive therapy resources and personalized treatment plans to improve quality of life.</p>
-                </div>
-                <div style="flex: 1;">
-                    <h3>Support Services</h3>
-                    <p>Guidance and support services for individuals and families affected by neurological disorders.</p>
-                </div>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Neuro-Health Africa is dedicated to transforming neurological care in Africa through innovative technologies and compassionate support services. We aim to bridge the gap in access to diagnostic tools and therapy resources, providing timely and effective solutions for individuals and families affected by neurological disorders.</p>
+                <a href="#services" class="cta-button">Explore Our Services</a>
             </div>
-            <a href="#contact" class="cta-button">Contact Us</a>
         </section>
-        <section id="technology" style="background-color: #f0f0f0;">
-            <h2>Technology</h2>
-            <p>Utilizing AI and real-time analytics to enhance diagnostic accuracy and personalize therapy recommendations.</p>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Diagnostic Tools</li>
+                    <li>Therapy Resources</li>
+                    <li>Support Services</li>
+                </ul>
+                <a href="#contact" class="cta-button">Contact Us</a>
+            </div>
         </section>
-        <section id="charity">
-            <h2>Charity Section</h2>
-            <p>Support our mission by donating to help individuals with neurological disorders access essential services and support.</p>
-            <a href="#donate" class="cta-button">Donate Now</a>
+
+        <section id="technology" class="section gray-bg">
+            <div class="container">
+                <h2>Our Technology</h2>
+                <p>At Neuro-Health Africa, we leverage AI and real-time analytics to enhance diagnostic accuracy and personalize therapy recommendations. Our technology allows us to provide timely and effective care, ensuring better outcomes for our patients.</p>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: neurohealthafrica@gmail.com</p>
-            <p>Address: Accra, Ghana</p>
+
+        <section id="charity" class="section">
+            <div class="container">
+                <h2>Charity Section</h2>
+                <p>Support our mission by donating to help individuals with neurological disorders access essential services and support. Your contributions make a meaningful impact on the lives of those in need.</p>
+                <a href="#donate" class="cta-button">Donate Now</a>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:neurohealthafrica@gmail.com">neurohealthafrica@gmail.com</a></p>
+                <p>Address: Accra, Ghana</p>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Neuro-Health Africa. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Neuro-Health Africa. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
