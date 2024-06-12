@@ -1,3 +1,5 @@
+html
+Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +48,26 @@
             <h2>Contact Us</h2>
             <p>Email: <a href="mailto:neurohealthafrica@gmail.com">neurohealthafrica@gmail.com</a></p>
             <p>Address: Accra, Ghana</p>
+        </section>
+        
+        <!-- Registration Form Section -->
+        <section id="registration">
+            <h2>Register for Updates</h2>
+            <form action="submit-your-form-handler-url" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
     <footer>
