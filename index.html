@@ -1,3 +1,5 @@
+html
+Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
             color: #333;
         }
         header {
@@ -68,6 +70,22 @@
         .cta-button:hover {
             background-color: #218838;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .cta-button {
+                padding: 0.6rem 1.2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -78,25 +96,34 @@
     <main>
         <section id="about">
             <h2>About Us</h2>
-            <p>Neuro-Health Africa is dedicated to...</p>
+            <p>Neuro-Health Africa is dedicated to empowering individuals with neurological disorders by providing accessible diagnostic tools, therapy resources, and support services across Africa.</p>
             <a href="#services" class="cta-button">Explore Our Services</a>
         </section>
         <section id="services">
             <h2>Our Services</h2>
-            <ul>
-                <li>Diagnostic Tools</li>
-                <li>Therapy Resources</li>
-                <li>Support Services</li>
-            </ul>
+            <div style="display: flex; flex-wrap: wrap;">
+                <div style="flex: 1; padding-right: 1rem;">
+                    <h3>Diagnostic Tools</h3>
+                    <p>State-of-the-art diagnostic tools for accurate assessment and early detection of neurological disorders.</p>
+                </div>
+                <div style="flex: 1; padding-right: 1rem;">
+                    <h3>Therapy Resources</h3>
+                    <p>Comprehensive therapy resources and personalized treatment plans to improve quality of life.</p>
+                </div>
+                <div style="flex: 1;">
+                    <h3>Support Services</h3>
+                    <p>Guidance and support services for individuals and families affected by neurological disorders.</p>
+                </div>
+            </div>
             <a href="#contact" class="cta-button">Contact Us</a>
         </section>
-        <section id="technology">
+        <section id="technology" style="background-color: #f0f0f0;">
             <h2>Technology</h2>
-            <p>Utilizing AI for real-time diagnostics...</p>
+            <p>Utilizing AI and real-time analytics to enhance diagnostic accuracy and personalize therapy recommendations.</p>
         </section>
         <section id="charity">
             <h2>Charity Section</h2>
-            <p>Donate to support people with neurological disorders...</p>
+            <p>Support our mission by donating to help individuals with neurological disorders access essential services and support.</p>
             <a href="#donate" class="cta-button">Donate Now</a>
         </section>
         <section id="contact">
